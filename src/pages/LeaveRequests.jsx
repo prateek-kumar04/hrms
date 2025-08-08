@@ -69,7 +69,7 @@ function LeaveRequests() {
   const [errors, setErrors] = useState({});
 
   useEffect(() => {
-    fetch("/src/data/leaves.json")
+    fetch("/leaves.json")
       .then((res) => res.json())
       .then((data) => setLeaves(data));
   }, []);
