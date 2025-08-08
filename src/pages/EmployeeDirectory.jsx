@@ -67,7 +67,7 @@ function EmployeeDirectory() {
   const [errors, setErrors] = useState({});
 
   useEffect(() => {
-    fetch("/src/data/employees.json")
+    fetch("../data/employees.json")
       .then((res) => res.json())
       .then((data) => setEmployees(data));
   }, []);
